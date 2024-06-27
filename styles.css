@@ -125,7 +125,7 @@
 /* Estilos para telas pequenas (mobile) */
 @media (max-width: 599px) {
   .textoPrincipal {
-    margin: 0rem 1rem;
+    margin: 0rem 0rem;
     font-size: 0.7rem;
   }
 
