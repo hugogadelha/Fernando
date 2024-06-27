@@ -10,39 +10,43 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .video-container {
+            max-width: 800px; /* Define a largura máxima do container */
+            margin: 0 auto; /* Centraliza o container na página */
+        }
+
+        .wistia_embed {
+            height: 360px; /* Define a altura do vídeo */
+            width: 100%; /* Define a largura do vídeo como 100% do container */
+        }
+    </style>
 </head>
 <body class="estilo">
     <div class="texto textoPrincipal">
-    <h1 class="inter-bold">APRENDA O MÉTODO QUE TEM AJUDADO MILHARES DE MULHERES A SE <span class="highlight">LIVRAREM</span> DOS MIOMAS EM APENAS 15 DIAS</h1>
+        <h1 class="inter-bold">APRENDA O MÉTODO QUE TEM AJUDADO MILHARES DE MULHERES A SE <span class="highlight">LIVRAREM</span> DOS MIOMAS EM APENAS 15 DIAS</h1>
     </div>
-    <!-- <br> -->
-    <div class="divBotao" style="margin-left: 2rem; margin-right: 2rem">
-    <!-- <img class="img" src="img.jpg"> -->
-    <script src="https://fast.wistia.com/embed/medias/d3wl62x73p.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_d3wl62x73p seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/d3wl62x73p/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    <div class="video-container">
+        <div class="wistia_embed wistia_async_d3wl62x73p videoFoam=true"></div>
     </div>
     
-    <!-- <br> -->
     <br>
     <div class="divBotao">
-      <a href="#" class="btn-acesso inter-bold escondido">QUERO ACESSO VITALÍCIO POR R$ 27,00</a>
+        <a href="#" class="btn-acesso inter-bold escondido">QUERO ACESSO VITALÍCIO POR R$ 27,00</a>
     </div>
 
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-          document.querySelector('.btn-acesso').classList.remove('escondido');
-        }, 30000);
-      });
-      </script>
-      
-
-  </body>
-  <footer class="rodape" >
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.btn-acesso').classList.remove('escondido');
+            }, 30000); // Exibir o botão após 30 segundos
+        });
+    </script>
+</body>
+<footer class="rodape">
     <div class="texto">
-    
-    <p class="inter-regular textoPrincipal">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</b></p>
+        <p class="inter-regular textoPrincipal">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
     </div>
-        <!-- <br> -->
-    
-      </footer>
+</footer>
 </html>
