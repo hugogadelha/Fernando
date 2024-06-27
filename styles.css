@@ -1,0 +1,161 @@
+/* Estilos gerais */
+.padd {
+  padding-left: 0.3rem;
+}
+
+.js-timeout {
+  font-weight: 600;
+  color: red;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #fff;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.textoPrincipal {
+  margin: 0rem 2rem;
+}
+
+.divBotao {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  background-color: #fee300;
+  text-decoration: none;
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #000000;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.estilo {
+  background-color: #19122d;
+}
+
+.rodape {
+  margin: 20rem 0rem 0rem;
+}
+
+.highlight {
+  background-color: yellow; /* Escolha a cor que você deseja */
+  color: #000; /* Ajuste a cor do texto se necessário */
+  border-radius: 10px;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-acesso {
+  display: inline-block;
+  background-color: #28a745; /* Cor verde */
+  color: #fff; /* Cor do texto branca */
+  font-size: 1.5rem; /* Tamanho da fonte grande */
+  font-weight: bold; /* Texto em negrito */
+  text-align: center;
+  padding: 1rem 2rem; /* Espaçamento interno */
+  margin: 1rem; /* Espaçamento externo */
+  border-radius: 2rem; /* Bordas arredondadas */
+  text-decoration: none; /* Remover sublinhado */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  animation: pulsate 2s infinite; /* Animação de pulsar com duração de 2 segundos */
+}
+
+.btn-acesso:hover {
+  background-color: #218838; /* Cor verde mais escura no hover */
+  animation: none; /* Remove a animação no hover */
+}
+
+.escondido {
+  display: none;
+}
+
+
+
+/* Estilos para telas pequenas (mobile) */
+@media (max-width: 599px) {
+  .textoPrincipal {
+    margin: 0rem 1rem;
+  }
+
+  .botao {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets (paisagem e retrato) */
+@media (min-width: 600px) and (max-width: 1199px) {
+  .textoPrincipal {
+    margin: 0rem 2rem;
+  }
+
+  .img {
+    width: 80%;
+  }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1200px) {
+  .estilo {
+    margin: 1.5rem 1rem;
+    background-color: #19122d;
+  }
+
+  .img {
+    width: 60%;
+  }
+
+  .textoPrincipal {
+    margin: 0rem 10rem;
+  }
+}
