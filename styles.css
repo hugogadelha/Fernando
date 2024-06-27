@@ -126,10 +126,15 @@
 @media (max-width: 599px) {
   .textoPrincipal {
     margin: 0rem 1rem;
+    font-size: 0.7rem;
   }
 
   .botao {
     width: 100%;
+  }
+
+  .btn-acesso {
+    font-size: 0.8rem;
   }
 }
 
